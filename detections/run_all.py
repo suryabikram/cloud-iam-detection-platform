@@ -4,6 +4,8 @@ from detections.oauth_rules import run_oauth_detections
 from detections.anomaly_rules import run_anomaly_detections
 from correlation.correlation_engine import run_correlation
 from risk.zero_trust_engine import explain_risk
+from response.response_manager import auto_respond
+
 
 
 
@@ -19,3 +21,6 @@ def run_all_detections(event):
 
     # Zero Trust scoring overview (for this single event)
     explain_risk(event)
+
+    # Step 6: automatic response
+    auto_respond(event)
