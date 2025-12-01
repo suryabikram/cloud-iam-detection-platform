@@ -23,6 +23,12 @@ def parse_cloudtrail_event(event_json):
         "accessKeyId": event_json.get("userIdentity", {}).get("accessKeyId"),
         "sessionContext": event_json.get("userIdentity", {}).get("sessionContext", {}),
 
+        "device_trust": event_json.get("device_trust", 0),
+        "geo_trust": event_json.get("geo_trust", 0),
+        "role_sensitivity": event_json.get("role_sensitivity", 0),
+        "anomaly_score": event_json.get("anomaly_score", 0),
+        "token_score": event_json.get("token_score", 0),
+
         # Raw event saved for debugging later
         "raw": event_json
     }

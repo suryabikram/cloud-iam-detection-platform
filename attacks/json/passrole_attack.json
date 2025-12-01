@@ -1,0 +1,21 @@
+{
+    "eventName": "PassRole",
+    "eventTime": "2024-01-10T12:12:10Z",
+    "sourceIPAddress": "198.51.100.20",
+    "userAgent": "signin.amazonaws.com",
+    "awsRegion": "us-east-1",
+    "userIdentity": {
+      "userName": "attacker",
+      "type": "IAMUser",
+      "arn": "arn:aws:iam::111122223333:user/attacker"
+    },
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111122223333:role/AdminAccess"
+    },
+    "device_trust": 18,
+    "geo_trust": 16,
+    "role_sensitivity": 20,
+    "anomaly_score": 10,
+    "token_score": 15
+  }
+  

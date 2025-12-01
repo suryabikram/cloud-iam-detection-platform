@@ -1,0 +1,14 @@
+{
+    "eventName": "ListBuckets",
+    "sourceIPAddress": "203.0.113.210",
+    "userIdentity": {
+      "userName": "dev_user",
+      "accessKeyId": "AKIANEWUSER123"
+    },
+    "device_trust": 10,
+    "geo_trust": 16,
+    "role_sensitivity": 12,
+    "anomaly_score": 4,
+    "token_score": 6
+  }
+  

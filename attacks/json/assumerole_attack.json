@@ -1,0 +1,17 @@
+{
+    "eventName": "AssumeRole",
+    "sourceIPAddress": "198.51.100.44",
+    "userIdentity": {
+      "userName": "evil_user",
+      "type": "IAMUser"
+    },
+    "requestParameters": {
+      "roleArn": "arn:aws:iam::111122223333:role/SecurityAdmin"
+    },
+    "device_trust": 19,
+    "geo_trust": 18,
+    "role_sensitivity": 18,
+    "anomaly_score": 15,
+    "token_score": 12
+  }
+  

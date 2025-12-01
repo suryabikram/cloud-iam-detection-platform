@@ -17,7 +17,7 @@ def detect_mfa_fatigue(event):
 
     mfa_attempts[user].append(now)
 
-    # Keep last 5 minutes only
+    # Keeps last 5 minutes only
     mfa_attempts[user] = [t for t in mfa_attempts[user] if now - t <= 300]
 
     if len(mfa_attempts[user]) > 5:
